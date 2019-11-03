@@ -2,6 +2,7 @@ def my_collect(array)
   (0..array.length - 1).step do |index|
     yield(array[index])
   end
+  return array
 end
 
 my_collect(['ruby', 'javascript', 'python', 'objective-c']) { |index| index.upcase }
