@@ -5,8 +5,8 @@ def my_collect(array)
   array
 end
 
-my_collect(['ruby', 'javascript', 'python', 'objective-c']) { |index| puts index.upcase }
+my_collect(['ruby', 'javascript', 'python', 'objective-c']) { |index| index.upcase }
 
 my_collect(['Tim Jones', 'Tom Smith', 'Sophie Johnson', 'Antoin Miller']) do |index|
-  puts index.split(' ').first
+  index.split(' ').first
 end
